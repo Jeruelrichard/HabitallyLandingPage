@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habitally | Track real life. No streaks. No guilt.</title>
+    <meta name="description" content="A habit tracker built for real life. Replace streak guilt with consistency scores, scaled logging, and penalty-free rest days.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Nunito+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="glow-bg"></div>
+    <div class="grain-overlay"></div>
+
+    <header>
+        <div class="logo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="brand-icon">
+                <path d="M4 12V20C4 21.1046 4.89543 22 6 22H18C19.1046 22 20 21.1046 20 20V12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M4 12C4 10.8954 4.89543 10 6 10H18C19.1046 10 20 10.8954 20 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M22 6C22 7.10457 21.1046 8 20 8H4C2.89543 8 2 7.10457 2 6C2 4.89543 2.89543 4 4 4H20C21.1046 4 22 4.89543 22 6Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M12 10V22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            Habitally
+        </div>
+        <a href="#bottom-cta" class="header-btn">Get Early Access</a>
+    </header>
+
+    <main class="hero">
+        <div class="hero-content">
+            <div class="badge">Early Access Waitlist</div>
+            <h1>Track real life.<br><span class="text-gradient">No streaks. No guilt.</span></h1>
+            <p class="subtitle">Most habit apps punish you for being human. Habitally replaces rigid streaks with momentum scores, scaled logging, and penalty-free rest days.</p>
+            
+            <div class="cta-container">
+                <form id="waitlist-form" class="waitlist-form">
+                    <input type="email" placeholder="Enter your email" required aria-label="Email address">
+                    <button type="submit" class="btn-primary">
+                        Join Waitlist
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </button>
+                </form>
+                <p class="cta-subtext">Be the first to know when we launch! Free to join.</p>
+            </div>
+        </div>
+
+        <div class="app-showcase">
+            <!-- App UI Mockup built with HTML/CSS -->
+            <div class="mockup-frame">
+                <div class="mockup-header">
+                    <div class="mockup-date">Thu, April 9</div>
+                    <div class="consistency">Consistency: 78% <span class="trend up">↗</span></div>
+                </div>
+                
+                <div class="habit-card">
+                    <div class="habit-info">
+                        <h3>Deep Work</h3>
+                        <span class="habit-meta">10:00 AM • Creator</span>
+                    </div>
+                    <div class="slider-container">
+                        <div class="slider-labels">
+                            <span>Exhausted</span>
+                            <span>Flow State</span>
+                        </div>
+                        <div class="fake-slider">
+                            <div class="fake-slider-track">
+                                <div class="fake-slider-fill" style="width: 70%"></div>
+                                <div class="fake-slider-thumb"></div>
+                            </div>
+                        </div>
+                        <div class="log-note">"7/10 - tired but got the script done."</div>
+                    </div>
+                </div>
+
+                <div class="habit-card">
+                    <div class="habit-info">
+                        <h3>Gym Routine</h3>
+                    </div>
+                    <div class="mockup-actions">
+                        <button class="mockup-btn btn-rest">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                            Life happened (0 penalty)
+                        </button>
+                        <button class="mockup-btn btn-log">Log</button>
+                    </div>
+                </div>
+                
+                <div class="insight-card">
+                    <div class="insight-icon">✨</div>
+                    <div class="insight-text">
+                        <strong>Habitally noticed:</strong> You create best on Tuesdays. Your reading score drops on late-work days.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="features">
+        <h2 class="section-title">Built for humans, not robots.</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                </div>
+                <h3>Consistency Scores</h3>
+                <p>One missed day shouldn't reset 30 days of hard work to zero. Your momentum decays gently, so you can bounce back tomorrow.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="21" x2="4" y2="14"></line><line x1="4" y1="10" x2="4" y2="3"></line><line x1="12" y1="21" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="3"></line><line x1="20" y1="21" x2="20" y2="16"></line><line x1="20" y1="12" x2="20" y2="3"></line><line x1="1" y1="14" x2="7" y2="14"></line><line x1="9" y1="8" x2="15" y2="8"></line><line x1="17" y1="16" x2="23" y2="16"></line></svg>
+                </div>
+                <h3>Scaled Logging</h3>
+                <p>Binary yes/no checkboxes don't reflect effort. Did a 10-minute walk instead of a full workout? That counts. Log your real energy.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg>
+                </div>
+                <h3>Penalty-Free Rest</h3>
+                <p>Sick? Travelling? Need a break? Tap the "Life Happened" button to acknowledge the day without taking a hit to your consistency.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="target-audience">
+        <div class="audience-container">
+            <div class="audience-eyebrow">IS THIS FOR YOU?</div>
+            <h2 class="audience-title">Built for people who want consistency</h2>
+            
+            <ul class="audience-list">
+                <li class="audience-item">
+                    <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Are tired of feeling guilty after broken streaks</span>
+                </li>
+                <li class="audience-item">
+                    <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Want to build a consistent habit and see encouraging progress</span>
+                </li>
+                <li class="audience-item">
+                    <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Just want a clear 10 seconds logging without friction</span>
+                </li>
+                <li class="audience-item not-for-you">
+                    <svg class="icon-cross" viewBox="0 0 24 24" fill="none" stroke="currentColor"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                    <span>Not for you if you love habit apps with streaks</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="bottom-cta" class="final-cta">
+        <div class="cta-inner">
+            <h2>Become Who You Want To Be</h2>
+            <p class="cta-subtitle">Join the waitlist and get 50% off when we launch.</p>
+            
+            <form class="waitlist-form-centered">
+                <input type="email" placeholder="you@email.com" required aria-label="Email address">
+                <button type="submit" class="btn-primary">Get Early Access</button>
+            </form>
+            
+            <p class="cta-microtext">Be the first to know when we launch. Free to join.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="logo">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" class="brand-icon">
+                    <path d="M4 12V20C4 21.1046 4.89543 22 6 22H18C19.1046 22 20 21.1046 20 20V12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M4 12C4 10.8954 4.89543 10 6 10H18C19.1046 10 20 10.8954 20 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M22 6C22 7.10457 21.1046 8 20 8H4C2.89543 8 2 7.10457 2 6C2 4.89543 2.89543 4 4 4H20C21.1046 4 22 4.89543 22 6Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                    <path d="M12 10V22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                Habitally
+            </div>
+            <p>Made for creators, builders, and real people.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
