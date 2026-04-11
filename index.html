@@ -47,55 +47,165 @@
         </div>
 
         <div class="app-showcase">
-            <!-- App UI Mockup built with HTML/CSS -->
-            <div class="mockup-frame">
-                <div class="mockup-header">
-                    <div class="mockup-date">Thu, April 9</div>
-                    <div class="consistency">Consistency: 78% <span class="trend up">↗</span></div>
-                </div>
-                
-                <div class="habit-card">
-                    <div class="habit-info">
-                        <h3>Deep Work</h3>
-                        <span class="habit-meta">10:00 AM • Creator</span>
-                    </div>
-                    <div class="slider-container">
-                        <div class="slider-labels">
-                            <span>Exhausted</span>
-                            <span>Flow State</span>
-                        </div>
-                        <div class="fake-slider">
-                            <div class="fake-slider-track">
-                                <div class="fake-slider-fill" style="width: 70%"></div>
-                                <div class="fake-slider-thumb"></div>
+            <div class="iphone-wrap-container">
+                <div class="iphone-wrapper">
+                    <div class="iphone-frame">
+                        <div class="iphone-notch"></div>
+                        <div class="app-screen">
+                            <div class="app-header">
+                                <span class="app-greeting">Today</span>
+                                <span class="app-date">April 9</span>
+                            </div>
+                            
+                            <div class="app-consistency-card">
+                                <div class="acc-title">Consistency</div>
+                                <div class="acc-score">78%</div>
+                                <div class="acc-trend">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg>
+                                    Strong momentum. Up from 61% last month.
+                                </div>
+                            </div>
+
+                            <div class="app-section-title">Today's Habits</div>
+                            
+                            <div class="app-habit-item">
+                                <div class="app-habit-info">
+                                    <div class="app-habit-name">Deep Work</div>
+                                    <div class="app-habit-meta">10:00 AM • Creator</div>
+                                </div>
+                                <div class="tier-tag">Standard (+5%)</div>
+                            </div>
+                            
+                            <div class="app-habit-item" style="border-color: rgba(255,255,255,0.3);">
+                                <div class="app-habit-info">
+                                    <div class="app-habit-name">Gym Routine</div>
+                                    <div class="app-habit-meta">6:00 PM • Health</div>
+                                </div>
+                                <div class="log-tag">Log</div>
                             </div>
                         </div>
-                        <div class="log-note">"7/10 - tired but got the script done."</div>
-                    </div>
-                </div>
-
-                <div class="habit-card">
-                    <div class="habit-info">
-                        <h3>Gym Routine</h3>
-                    </div>
-                    <div class="mockup-actions">
-                        <button class="mockup-btn btn-rest">
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-                            Life happened (0 penalty)
-                        </button>
-                        <button class="mockup-btn btn-log">Log</button>
-                    </div>
-                </div>
-                
-                <div class="insight-card">
-                    <div class="insight-icon">✨</div>
-                    <div class="insight-text">
-                        <strong>Gradully noticed:</strong> You create best on Tuesdays. Your reading score drops on late-work days.
                     </div>
                 </div>
             </div>
         </div>
     </main>
+
+    <section class="mockup-showcase reveal">
+        <div class="showcase-header">
+            <h2>Built differently out of necessity.</h2>
+            <p>A peek inside the system designed to keep you on track without burning you out.</p>
+        </div>
+        
+        <div class="showcase-grid">
+            <!-- Mockup 2: Tiered Logging -->
+            <div class="iphone-wrap-container">
+                <div class="iphone-wrapper hover-lift">
+                    <div class="iphone-frame">
+                        <div class="iphone-notch"></div>
+                        <div class="app-screen">
+                            <div class="app-top-nav">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                                Gym Routine
+                            </div>
+                            <h3 class="app-screen-title">Log Effort</h3>
+                            
+                            <div class="tier-card">
+                                <div class="tier-header">
+                                    <h4>Mini</h4>
+                                    <span class="tier-points">+2%</span>
+                                </div>
+                                <p>5-minute stretch. Showed up on a bad day.</p>
+                            </div>
+                            <div class="tier-card active-tier">
+                                <div class="tier-header">
+                                    <h4>Standard</h4>
+                                    <span class="tier-points">+5%</span>
+                                </div>
+                                <p>30-minute workout. Solid baseline.</p>
+                            </div>
+                            <div class="tier-card">
+                                <div class="tier-header">
+                                    <h4>Elite</h4>
+                                    <span class="tier-points">+8%</span>
+                                </div>
+                                <p>Full hour session. Pushing limits.</p>
+                            </div>
+                            
+                            <button class="app-log-btn">Log Standard Effort</button>
+                            <button class="app-rest-btn">Life Happened (Rest Day)</button>
+                        </div>
+                    </div>
+                </div>
+                <p class="mockup-caption">Honest, tiered logging</p>
+            </div>
+
+            <!-- Mockup 3: Weekly View -->
+            <div class="iphone-wrap-container">
+                <div class="iphone-wrapper hover-lift" style="transition-delay: 0.1s;">
+                    <div class="iphone-frame">
+                        <div class="iphone-notch"></div>
+                        <div class="app-screen">
+                            <div class="app-top-nav" style="justify-content: space-between; margin-bottom: 2rem;">
+                                <span>Weekly Review</span>
+                                <span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg></span>
+                            </div>
+                            
+                            <div class="weekly-container">
+                                <div class="week-row">
+                                    <div class="week-header">
+                                        <span>Deep Work</span>
+                                        <span class="week-score">91%</span>
+                                    </div>
+                                    <div class="week-dots">
+                                        <div class="dot filled">M</div>
+                                        <div class="dot filled">T</div>
+                                        <div class="dot rest">W</div>
+                                        <div class="dot filled">T</div>
+                                        <div class="dot">F</div>
+                                        <div class="dot">S</div>
+                                        <div class="dot rest">S</div>
+                                    </div>
+                                </div>
+
+                                <div class="week-row">
+                                    <div class="week-header">
+                                        <span>Gym Routine</span>
+                                        <span class="week-score" style="color: #ef4444;">45%</span>
+                                    </div>
+                                    <div class="week-dots">
+                                        <div class="dot filled">M</div>
+                                        <div class="dot">T</div>
+                                        <div class="dot">W</div>
+                                        <div class="dot">T</div>
+                                        <div class="dot filled">F</div>
+                                        <div class="dot">S</div>
+                                        <div class="dot">S</div>
+                                    </div>
+                                </div>
+
+                                <div class="week-row">
+                                    <div class="week-header">
+                                        <span>Read 10 Pages</span>
+                                        <span class="week-score">100%</span>
+                                    </div>
+                                    <div class="week-dots">
+                                        <div class="dot filled">M</div>
+                                        <div class="dot filled">T</div>
+                                        <div class="dot filled">W</div>
+                                        <div class="dot filled">T</div>
+                                        <div class="dot filled">F</div>
+                                        <div class="dot filled">S</div>
+                                        <div class="dot filled">S</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="mockup-caption">Momentum-based weekly review</p>
+            </div>
+        </div>
+    </section>
 
     <section class="features">
         <h2 class="section-title">Built for humans, not robots.</h2>
@@ -153,7 +263,7 @@
     <section id="bottom-cta" class="final-cta">
         <div class="cta-inner">
             <h2>Become Who You Want To Be</h2>
-            <p class="cta-subtitle">Join the waitlist and get 50% off when we launch.</p>
+            <p class="cta-subtitle">Founding members lock in $2.99/month (or $29.99/year) forever — regular pricing will be $4.99/month (or $49.99/year) at public launch.</p>
             
             <form class="waitlist-form-centered">
                 <input type="email" placeholder="you@email.com" required aria-label="Email address">

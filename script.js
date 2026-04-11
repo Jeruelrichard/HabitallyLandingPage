@@ -68,20 +68,23 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Add gentle floating animation to the mockup
-    const mockup = document.querySelector('.mockup-frame');
+    const mockup = document.querySelector('.iphone-wrapper');
     let startY = 0;
     
     function animate(time) {
+        if (!mockup) return;
         // Move up and down by 10px over a 6 second period
         const offset = Math.sin(time / 1000) * 8;
         mockup.style.transform = `translateY(${offset}px)`;
         requestAnimationFrame(animate);
     }
     
-    requestAnimationFrame(animate);
+    if (mockup) {
+        requestAnimationFrame(animate);
+    }
 
     // Scroll Reveal Animation
-    const revealElements = document.querySelectorAll('.features, .target-audience, .final-cta, footer');
+    const revealElements = document.querySelectorAll('.mockup-showcase, .features, .target-audience, .final-cta, footer');
     
     // Set initial state
     revealElements.forEach(el => el.classList.add('reveal'));
