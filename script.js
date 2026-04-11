@@ -10,16 +10,59 @@ document.addEventListener('DOMContentLoaded', () => {
             
             if (input && input.value) {
                 const originalText = btn.innerHTML;
-                btn.innerHTML = 'Added! 🎉';
-                btn.style.background = 'var(--success)';
-                btn.style.color = '#fff';
                 
-                setTimeout(() => {
-                    input.value = '';
-                    btn.innerHTML = originalText;
-                    btn.style.background = '';
-                    btn.style.color = '';
-                }, 3000);
+                // Set loading state
+                btn.innerHTML = 'Sending...';
+                btn.style.opacity = '0.7';
+                btn.style.cursor = 'not-allowed';
+                btn.disabled = true;
+
+                // Prepare the data exactly as Loops expects it
+                const formBody = "userGroup=&mailingLists=&email=" + encodeURIComponent(input.value);
+
+                // Send to Loops
+                fetch('https://app.loops.so/api/newsletter-form/cmnronxeg01180hy9cn6o18x7', {
+                    method: 'POST',
+                    body: formBody,
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                    },
+                })
+                .then(res => {
+                    if (res.ok) {
+                        // Success UI
+                        btn.innerHTML = 'Added! 🎉';
+                        btn.style.background = 'var(--success)';
+                        btn.style.color = '#fff';
+                        btn.style.opacity = '1';
+                        
+                        setTimeout(() => {
+                            input.value = '';
+                            btn.innerHTML = originalText;
+                            btn.style.background = '';
+                            btn.style.color = '';
+                            btn.style.cursor = 'pointer';
+                            btn.disabled = false;
+                        }, 3000);
+                    } else {
+                        throw new Error('Network response was not ok.');
+                    }
+                })
+                .catch(err => {
+                    // Error UI
+                    btn.innerHTML = 'Error. Try again';
+                    btn.style.background = '#ef4444'; // Red error block
+                    btn.style.color = '#fff';
+                    btn.style.opacity = '1';
+                    
+                    setTimeout(() => {
+                        btn.innerHTML = originalText;
+                        btn.style.background = '';
+                        btn.style.color = '';
+                        btn.style.cursor = 'pointer';
+                        btn.disabled = false;
+                    }, 3000);
+                });
             }
         });
     });
