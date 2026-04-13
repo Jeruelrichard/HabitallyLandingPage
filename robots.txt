@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Exclude private components if they ever get built on the main domain
+# Disallow: /dashboard/
+# Disallow: /onboarding/
+
+Sitemap: https://gradully.com/sitemap.xml

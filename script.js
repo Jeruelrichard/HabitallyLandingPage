@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Scroll Reveal Animation
-    const revealElements = document.querySelectorAll('.mockup-showcase, .features, .target-audience, .final-cta, footer');
+    const revealElements = document.querySelectorAll('.mockup-showcase, .features, .target-audience, .social-proof, .final-cta, footer');
     
     // Set initial state
     revealElements.forEach(el => el.classList.add('reveal'));

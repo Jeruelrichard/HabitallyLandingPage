@@ -5,6 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gradully | Track real life. No streaks. No guilt.</title>
     <meta name="description" content="A habit tracker built for real life. Replace streak guilt with consistency scores, scaled logging, and penalty-free rest days.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gradully.com/">
+    <meta property="og:title" content="Gradully | Track real life. No streaks. No guilt.">
+    <meta property="og:description" content="A habit tracker built for real life. Replace streak guilt with consistency scores, scaled logging, and penalty-free rest days.">
+    <meta property="og:image" content="https://gradully.com/og-image.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://gradully.com/">
+    <meta name="twitter:title" content="Gradully | Track real life. No streaks. No guilt.">
+    <meta name="twitter:description" content="A habit tracker built for real life. Replace streak guilt with consistency scores, scaled logging, and penalty-free rest days.">
+    <meta name="twitter:image" content="https://gradully.com/og-image.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://gradully.com/">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "Gradully",
+          "operatingSystem": "iOS, Android, Web",
+          "applicationCategory": "HealthAndFitnessApplication",
+          "description": "A habit tracker built for real life. Replace streak guilt with consistency scores, scaled logging, and penalty-free rest days.",
+          "offers": {
+            "@type": "Offer",
+            "price": "2.99",
+            "priceCurrency": "USD"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How is Gradully different from other habit trackers?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Most habit apps punish you for missing a day by breaking your streak. Gradully uses consistency scores, scaled logging for partial effort, and penalty-free rest days to reflect real life."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is scaled logging?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Instead of a simple yes or no, you can log partial effort (like a 10-minute walk instead of a full gym session) and still get credit for showing up."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://gradully.com/"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+    
     <link rel="stylesheet" href="style.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +88,7 @@
 
     <header>
         <div class="logo">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="brand-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="brand-icon" aria-label="Gradully Logo" role="img">
                 <path d="M4 12V20C4 21.1046 4.89543 22 6 22H18C19.1046 22 20 21.1046 20 20V12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                 <path d="M4 12C4 10.8954 4.89543 10 6 10H18C19.1046 10 20 10.8954 20 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                 <path d="M22 6C22 7.10457 21.1046 8 20 8H4C2.89543 8 2 7.10457 2 6C2 4.89543 2.89543 4 4 4H20C21.1046 4 22 4.89543 22 6Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
@@ -31,8 +102,8 @@
     <main class="hero">
         <div class="hero-content">
             <div class="badge">Early Access Waitlist</div>
-            <h1>Track real life.<br><span class="text-gradient">No streaks. No guilt.</span></h1>
-            <p class="subtitle">Most habit apps punish you for being human. Gradully replaces rigid streaks with momentum scores, scaled logging, and penalty-free rest days.</p>
+            <h1><span class="text-gradient">No streaks. No guilt.</span></h1>
+            <p class="subtitle">Gradully tracks your consistency as a score that dips when life happens and recovers when you return — because 96% consistency is not the same as failure.</p>
             
             <div class="cta-container">
                 <form id="waitlist-form" class="waitlist-form">
@@ -42,7 +113,7 @@
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                     </button>
                 </form>
-                <p class="cta-subtext">Be the first to know when we launch! Free to join.</p>
+                <p class="cta-subtext">Currently in development — expected launch June 2026. Join the waitlist to follow the journey.</p>
             </div>
         </div>
 
@@ -259,6 +330,48 @@
             </ul>
         </div>
     </section>
+    </section>
+
+    <section class="social-proof reveal">
+        <div class="proof-header">
+            <h2>You are not the problem.</h2>
+            <p>The system is. Here's what habit trackers have been getting wrong for years.</p>
+        </div>
+        <div class="quotes-grid">
+            <div class="quote-card">
+                <div class="quote-content">"For a long time I thought this was a discipline problem. But then I realized: I was consistent. 25 out of 26 days is 96% consistency. That's excellent by any standard. The problem wasn't me — it was a feedback system that treated 96% the same as 0%."</div>
+                <div class="quote-author">
+                    <div class="author-avatar r-orange">r/</div>
+                    <div class="author-info">
+                        <strong>Reddit User</strong>
+                        <span>r/getdisciplined</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="quote-card">
+                <div class="quote-content">"What kills me about most apps is they're built around motivation, not what happens when motivation disappears. The guilt loop is real. Miss one day, feel bad, avoid the app, miss more days, delete app, repeat."</div>
+                <div class="quote-author">
+                    <div class="author-avatar r-blue">r/</div>
+                    <div class="author-info">
+                        <strong>Reddit User</strong>
+                        <span>r/habittracking</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="quote-card">
+                <div class="quote-content">"The partial wins thing is huge... What bugs me most is the guilt design. Broken streak notifications, red X's, 'you missed 3 days' alerts. I don't need my phone being disappointed in me too."</div>
+                <div class="quote-author">
+                    <div class="author-avatar r-purple">r/</div>
+                    <div class="author-info">
+                        <strong>Reddit User</strong>
+                        <span>r/productivity</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section id="bottom-cta" class="final-cta">
         <div class="cta-inner">
@@ -270,14 +383,21 @@
                 <button type="submit" class="btn-primary">Get Early Access</button>
             </form>
             
-            <p class="cta-microtext">Be the first to know when we launch. Free to join.</p>
+            <p class="cta-microtext">Founding member pricing closes when we hit 500 signups or launch, whichever comes first.</p>
         </div>
     </section>
 
     <footer>
+        <div class="footer-links" style="display: flex; gap: 1rem; justify-content: center; margin-bottom: 2rem; font-size: 0.9rem; opacity: 0.8;">
+            <a href="/" style="color: inherit; text-decoration: none;">Home</a>
+            <!-- Prepare for Programmatic SEO pages -> Replace URLs when pages are built -->
+            <a href="/features" style="color: inherit; text-decoration: none;">Features</a>
+            <a href="/alternatives" style="color: inherit; text-decoration: none;">Alternatives</a>
+            <a href="/pricing" style="color: inherit; text-decoration: none;">Pricing</a>
+        </div>
         <div class="footer-content">
             <div class="logo">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" class="brand-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" class="brand-icon" aria-label="Gradully Logo" role="img">
                     <path d="M4 12V20C4 21.1046 4.89543 22 6 22H18C19.1046 22 20 21.1046 20 20V12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                     <path d="M4 12C4 10.8954 4.89543 10 6 10H18C19.1046 10 20 10.8954 20 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                     <path d="M22 6C22 7.10457 21.1046 8 20 8H4C2.89543 8 2 7.10457 2 6C2 4.89543 2.89543 4 4 4H20C21.1046 4 22 4.89543 22 6Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
