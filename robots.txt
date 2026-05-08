@@ -5,4 +5,4 @@ Allow: /
 # Disallow: /dashboard/
 # Disallow: /onboarding/
 
-Sitemap: https://gradully.com/sitemap.xml
+Sitemap: https://www.gradully.com/sitemap.xml
